@@ -36,7 +36,7 @@
   font-size: 1.55rem;
 }
 
-/* Contact Buttons (unchanged except CV) */
+/* Contact Buttons */
 .contact-buttons {
   display: flex;
   justify-content: center;
@@ -45,32 +45,31 @@
   margin-bottom: 2.5rem;
 }
 
-.contact-btn {
+/* === 공통 버튼 스타일 === */
+.btn-base {
   display: inline-block;
-  padding: 5px 10px;
-  background: #333;
-  color: #fff !important;
+  padding: 4px 8px;
+  font-size: 1.6rem;
   border-radius: 10px;
-  font-size: 1.5rem;
   text-decoration: none;
   transition: background 0.25s ease;
 }
 
+/* === contact 전용 === */
+.contact-btn {
+  background: #333;
+  color: #fff !important;
+}
 .contact-btn:hover {
   background: #555;
 }
 
+/* === CV 전용 === */
 .cv-btn {
-  display: inline-block;
-  padding: 6px 12px;
   background: #ddd;
   color: #222 !important;
-  border-radius: 10px;
-  font-size: 1.5rem;
   border: 1px solid #bbb;
-  text-decoration: none;
 }
-
 .cv-btn:hover {
   background: #ccc;
 }
@@ -99,15 +98,15 @@
   </h2>
 
   <!-- Contact Buttons -->
-  <div class="contact-buttons">
-    <a class="contact-btn" href="mailto:daekyung.lee@ascii.ac.at">Email</a>
-    <a class="contact-btn" href="https://github.com/42megaparsec" target="_blank">GitHub</a>
-    <a class="contact-btn" href="https://www.linkedin.com/in/42megaparsec" target="_blank">LinkedIn</a>
-    <a class="contact-btn" href="https://scholar.google.com/citations?user=pC1TWpgAAAAJ" target="_blank">Google Scholar</a>
-    <a class="contact-btn" href="https://orcid.org/0000-0003-2640-5658" target="_blank">ORCID</a>
+<div class="contact-buttons">
+  <a class="btn-base contact-btn" href="mailto:daekyung.lee@ascii.ac.at">Email</a>
+  <a class="btn-base contact-btn" href="https://github.com/42megaparsec" target="_blank">GitHub</a>
+  <a class="btn-base contact-btn" href="https://www.linkedin.com/in/42megaparsec" target="_blank">LinkedIn</a>
+  <a class="btn-base contact-btn" href="https://scholar.google.com/citations?user=pC1TWpgAAAAJ" target="_blank">Google Scholar</a>
+  <a class="btn-base contact-btn" href="https://orcid.org/0000-0003-2640-5658" target="_blank">ORCID</a>
 
-    <a class="cv-btn" href="/files/CV_DaekyungLee.pdf" target="_blank">Download CV</a>
-  </div>
+  <a class="btn-base cv-btn" href="/files/CV_DaekyungLee.pdf" target="_blank">Download CV</a>
+</div>
 
 
 

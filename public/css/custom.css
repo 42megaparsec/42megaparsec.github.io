@@ -1,0 +1,172 @@
+{{ define "content" }}
+
+<style>
+/* ===== Contact Button Style ===== */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.targetable:target {
+  background: #f5efe2;          /* 살짝 따뜻한 배경색 */
+  border-color: #b8945c;        /* 강조 테두리 */
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  transition: background 0.4s ease, border 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.contact-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #333;
+  color: #fff !important;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.contact-btn:hover {
+  background: #555;
+  transform: translateY(-1px);
+}
+
+/* ===== CV Button (distinct style) ===== */
+.cv-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #ddd;
+  color: #222 !important;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: 1px solid #bbb;
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.cv-btn:hover {
+  background: #ccc;
+  transform: translateY(-1px);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .contact-btn, .cv-btn {
+    font-size: 1.3rem;
+    padding: 12px 22px;
+  }
+}
+</style>
+
+
+<section class="home-section" style="max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem;">
+
+  <!-- Avatar -->
+  <div style="text-align: center; margin-bottom: 1rem;">
+    <img src="/images/avatar.jpg"
+         alt="Profile picture"
+         style="width: 250px; height: 250px; border-radius: 0px; object-fit: cover;">
+  </div>
+
+  <!-- Name -->
+  <h1 style="font-size: 3.5rem; font-weight: 700; margin-bottom: 0.4rem; text-align:center;">
+    Daekyung Lee
+  </h1>
+
+  <h2 style="font-size: 2.3rem; font-weight: 400; color: #666; margin-bottom: 2rem; text-align:center;">
+    Postdoctoral Researcher in Complex Networks & Supply Chain Analysis
+  </h2>
+
+  <!-- Contact Buttons including new CV button -->
+  <div class="contact-buttons">
+    <a class="contact-btn" href="mailto:daekyung.lee@ascii.ac.at">Email</a>
+    <a class="contact-btn" href="https://github.com/42megaparsec" target="_blank">GitHub</a>
+    <a class="contact-btn" href="https://www.linkedin.com/in/42megaparsec" target="_blank">LinkedIn</a>
+    <a class="contact-btn" href="https://scholar.google.com/citations?user=GUvdgQkAAAAJ" target="_blank">Google Scholar</a>
+    <a class="contact-btn" href="https://orcid.org/0000-0003-2640-5658" target="_blank">ORCID</a>
+
+    <!-- NEW CV BUTTON -->
+    <a class="cv-btn" href="/files/CV_DaekyungLee.pdf" target="_blank">Download CV</a>
+  </div>
+
+
+  <!-- Intro paragraphs (unchanged) -->
+  <p style="line-height: 1.6; margin-bottom: 1.4rem;">
+    I am a postdoctoral researcher at the Supply Chain Intelligence Institute Austria (ASCII),
+    where I study the stability and dynamics of international supply networks. Trained in
+    statistical physics, I use network science and data-driven modeling to uncover structure
+    in complex data and translate it into practical insight.
+  </p>
+
+  <p style="line-height: 1.6; margin-bottom: 1.4rem;">
+    I see science as the pursuit of simplicity that makes the world more comprehensible.
+    Newton’s law of gravitation showed that the fall of an apple and the motion of the Moon
+    follow the same principle. Likewise, understanding a complex system means uncovering a
+    simple structure that captures its essential behavior and draws the complexity of the
+    world within the reach of human comprehension.
+  </p>
+
+  <p style="line-height: 1.6; margin-bottom: 2.2rem;">
+    I have applied this perspective to diverse problems, including stability and shock
+    propagation in supply chains, synchronization in power grids, correlation patterns in
+    climate systems, and energy transport in photosynthetic networks. My current work focuses
+    on the economic and systemic behavior of global supply chains, and I am always open to
+    new ideas and collaborations across disciplines.
+  </p>
+
+
+  <hr style="margin: 3rem 0;">
+
+
+  <!-- Career (renamed from Work Experience) -->
+  <h2>Career</h2>
+
+  <h3 style="margin-top: 1rem;">Postdoctoral Researcher — Supply Chain Intelligence Institute Austria (ASCII)</h3>
+  <p style="margin-top: 0.2rem;">
+    <em>Jun 2024 – Present</em><br>
+    Research in global supply chain networks, trade flows, and systemic risk.
+  </p>
+
+  <h3>Postdoctoral Researcher — Pukyong National University (SEED Institute)</h3>
+  <p style="margin-top: 0.2rem;">
+    <em>Dec 2023 – May 2024</em><br>
+    Environmental network science and climate-driven system analysis.
+  </p>
+
+  <h3>Postdoctoral Researcher — Korea Institute of Energy Technology (KENTECH)</h3>
+  <p style="margin-top: 0.2rem;">
+    <em>Sep 2021 – Dec 2023</em><br>
+    Power grid stability, synchronization dynamics, and complexity science.
+  </p>
+
+
+  <!-- NEW Experience section -->
+  <h2 style="margin-top: 2.5rem;">Experience</h2>
+
+  <h3 style="margin-top: 1rem;">Local Organizing Committee — Europe-Korea Conference on Science and Technology (EKC 2025)</h3>
+  <p style="margin-top: 0.2rem;">
+    <em>Aug 2025</em><br>
+    Vienna, Austria. Supported event coordination and academic program preparation.
+  </p>
+
+  <h3 style="margin-top: 1rem;">Human Resources Program in Energy Technology</h3>
+  <p style="margin-top: 0.2rem;">
+    <em>Dec 2019 – Mar 2020</em><br>
+    Funded by the Korea Institute of Energy Technology.<br>
+    Advisor: Prof. Heetae Kim (Universidad del Desarrollo)<br>
+    Research topic: Power grid stability and community detection.
+  </p>
+
+
+  <hr style="margin: 3rem 0;">
+
+
+  <!-- Education / Skills / Languages / Awards (unchanged) -->
+  <!-- (생략: 기존과 동일) -->
+
+</section>
+
+{{ end }}
