@@ -1,0 +1,36 @@
+<div id="{{ .id }}" 
+     class="pub-item targetable" 
+     data-pub="{{ .id }}"
+     style="scroll-margin-top: 120px;">
+
+  <div class="pub-title">
+    <b>{{ .title }}</b>
+  </div>
+
+  <div class="pub-authors">
+    {{ .authors }}
+  </div>
+
+  <div class="pub-bottom">
+    <i>{{ .journal }} {{ .ref }}</i>
+
+    <span class="pub-links">
+      {{ if .poster_link }}
+        <a class="pub-btn preprint" href="{{ .poster_link }}" download>Poster</a>
+      {{ end }}
+
+      {{ if .ppt_link }}
+        <a class="pub-btn preprint" href="{{ .ppt_link }}" download>Slides</a>
+      {{ end }}
+
+      {{ if .preprint_link }}
+        <a class="pub-btn" href="{{ .preprint_link }}" target="_blank">Preprint</a>
+      {{ end }}
+
+      {{ if .journal_link }}
+        <a class="pub-btn" href="{{ .journal_link }}" target="_blank">Journal</a>
+      {{ end }}
+    </span>
+  </div>
+
+</div>

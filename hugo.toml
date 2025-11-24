@@ -1,0 +1,70 @@
+baseURL = "https://42megaparsec.github.io"
+title = "Daekyung Lee"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+enableEmoji = true
+
+[pagination]
+pagerSize = 6
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+author = "Daekyung Lee"
+description = "Researcher in complex networks and supply-chain analytics"
+keywords = "networks, supply chain, physics"
+info = ["Postdoctoral Researcher"]
+
+avatarURL = "images/avatar.jpg"
+dateFormat = "January 2, 2006"
+since = 2024
+
+# 라이트 모드 강제
+colorScheme = "light"
+hideColorSchemeToggle = true
+
+# custom CSS 적용
+customCSS = ["css/custom.css"]
+customSCSS = []
+customJS = []
+customRemoteJS = []
+
+maxSeeAlsoItems = 5
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+
+#############################
+## English only (언어 스위처 없애기)
+#############################
+
+[languages.en]
+languageName = "English"   # 나중에 한국어 추가하면 여기 그대로 유지
+
+[[menu.main]]
+name = "Research"
+url  = "/research/"
+weight = 1
+
+# Publications Page
+[[menu.main]]
+name = "Publications"
+url  = "/publications/"
+weight = 2
+
+# Blog (posts)
+[[menu.main]]
+name = "Blog"
+url  = "/posts/"
+weight = 3

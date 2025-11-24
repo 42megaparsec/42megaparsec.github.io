@@ -1,0 +1,193 @@
+<div id="timeline-container"></div>
+
+<style>
+#timeline-container {
+    width: 100%;
+    height: 480px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.timeline-tooltip {
+    position: absolute;
+    padding: 8px 10px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    pointer-events: none;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    max-width: 280px;
+    line-height: 1.35;
+}
+
+#timeline-container svg .domain,
+#timeline-container svg .tick line {
+    stroke-width: 1.2px !important;
+    stroke: #333 !important;
+}
+
+#timeline-container svg text {
+    font-size: 1.2rem !important;
+    font-weight: 500;
+}
+
+/* === Legend === */
+.timeline-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 10px;
+    margin-left: 135px; /* y축의 left margin과 맞춰 정렬 */
+}
+
+.timeline-legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.timeline-legend-color {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    border-radius: 3px;
+}
+</style>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const publications = [
+        {{- range .Site.Data.publications }}
+        {
+            title: "{{ .title }}",
+            year: {{ .year }},
+            category: "{{ .category }}",
+            journal: "{{ .journal }}",
+            link: "{{ .journal_link }}"
+        },
+        {{- end }}
+    ];
+
+    /* === Category normalization === */
+    let rawCount = {};
+    publications.forEach(p => {
+        rawCount[p.category] = (rawCount[p.category] || 0) + 1;
+    });
+    publications.forEach(p => {
+        if (rawCount[p.category] === 1) p.category = "Others";
+    });
+
+    /* === Category stats === */
+    let catStats = {};
+    publications.forEach(p => {
+        if (!catStats[p.category]) catStats[p.category] = {count: 0, latest: 0};
+        catStats[p.category].count++;
+        catStats[p.category].latest = Math.max(catStats[p.category].latest, p.year);
+    });
+
+    let finalCats = Object.keys(catStats).sort((a, b) => {
+        if (a === "Others") return 1;
+        if (b === "Others") return -1;
+
+        if (catStats[b].count !== catStats[a].count)
+            return catStats[b].count - catStats[a].count;
+
+        return catStats[b].latest - catStats[a].latest;
+    });
+
+    /* === SVG setup === */
+    const margin = {top: 10, right: 5, bottom: 20, left: 5};
+    const width = document.getElementById("timeline-container").clientWidth - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
+
+    const svg = d3.select("#timeline-container")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom);
+
+    const g = svg.append("g")
+        .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+    /* === X-axis === */
+    const years = publications.map(p => p.year);
+    const x = d3.scaleLinear()
+        .domain([d3.min(years) - 0.3, d3.max(years) + 0.3])
+        .range([0, width]);
+
+    g.append("g")
+        .attr("transform", `translate(0, ${height})`)
+        .call(d3.axisBottom(x).tickFormat(d3.format("d")));
+
+    /* ============================================
+       === [변경 부분] Y축 제거 → band scale만 유지 ===
+       ============================================ */
+    const y = d3.scaleBand()
+        .domain(finalCats)
+        .range([0, height])
+        .padding(0.35);
+
+    // ❌ 기존 y-axis 지우기 → 라벨 없음
+    // g.append("g").call(d3.axisLeft(y));  // 제거
+
+    /* === Colors === */
+    const color = d3.scaleOrdinal()
+        .domain(finalCats)
+        .range(d3.schemeSet2);
+
+    /* === Tooltip === */
+    const tooltip = d3.select("body").append("div")
+        .attr("class", "timeline-tooltip")
+        .style("opacity", 0);
+
+    /* === Markers === */
+    const markerSize = 13;
+
+    g.selectAll("rect.pub-marker")
+        .data(publications)
+        .enter()
+        .append("rect")
+        .attr("class", "pub-marker")
+        .attr("x", d => x(d.year) - markerSize/2)
+        .attr("y", d => y(d.category) + y.bandwidth()/2 - markerSize/2)
+        .attr("width", markerSize)
+        .attr("height", markerSize)
+        .attr("fill", d => color(d.category))
+        .style("cursor", "pointer")
+        .on("mouseover", function(event, d) {
+            tooltip.transition().style("opacity", 1);
+            tooltip.html(`
+                <strong>${d.title}</strong><br>
+                ${d.journal}<br>
+                <i>${d.year}</i><br>
+                <a href="${d.link}" target="_blank">Link</a>
+            `)
+            .style("left", (event.pageX + 15) + "px")
+            .style("top", (event.pageY - 20) + "px");
+        })
+        .on("mouseout", () => tooltip.transition().style("opacity", 0))
+        .on("click", (event, d) => window.open(d.link, "_blank"));
+
+    /* ===================================================
+       === [변경 부분] 아래쪽에 Legend 동적 생성 ===
+       =================================================== */
+    const legend = d3.select("#timeline-container")
+        .append("div")
+        .attr("class", "timeline-legend");
+
+    finalCats.forEach(cat => {
+        const item = legend.append("div")
+            .attr("class", "timeline-legend-item");
+
+        item.append("div")
+            .attr("class", "timeline-legend-color")
+            .style("background", color(cat));
+
+        item.append("span").text(cat);
+    });
+
+});
+</script>
