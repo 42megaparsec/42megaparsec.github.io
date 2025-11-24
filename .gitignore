@@ -1,0 +1,7 @@
+# Hugo 캐시
+/resources/
+/hugo_stats.json
+
+# OS 잡것들
+.DS_Store
+Thumbs.db

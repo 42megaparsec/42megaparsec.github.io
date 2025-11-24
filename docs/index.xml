@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Daekyung Lee</title><link>https://42megaparsec.github.io/</link><description>Recent content on Daekyung Lee</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://42megaparsec.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Guia de Sintaxe Markdown</title><link>https://42megaparsec.github.io/post_backup/markdown-syntax.pt-br/</link><pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/markdown-syntax.pt-br/</guid><description>&lt;p&gt;Esse artigo é um exemplo básico para mostrar a sintaxe Markdown que é usada nos arquivos de conteúdo do Hugo. Ele também mostrar como cada elemento básico HTML é estilizado com CSS com os temas do Hugo.&lt;/p&gt;</description></item><item><title>Markdown Syntax Guide</title><link>https://42megaparsec.github.io/post_backup/markdown-syntax/</link><pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/markdown-syntax/</guid><description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description></item><item><title>Conteúdo Rico</title><link>https://42megaparsec.github.io/post_backup/rich-content.pt-br/</link><pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/rich-content.pt-br/</guid><description>&lt;p&gt;O Hugo vem com vários &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes" class="external-link" target="_blank" rel="noopener"&gt;Shortcodes Internos&lt;/a&gt; para conteúdo rico, assim como uma &lt;a href="https://gohugo.io/about/hugo-and-gdpr/" class="external-link" target="_blank" rel="noopener"&gt;Configuração de Privacidade&lt;/a&gt; e uma gama de Shortcodes simples que permitem embutir versões estáticas e sem JS de várias de redes sociais.&lt;/p&gt;
+&lt;h2 id=""&gt;
+ 
+&lt;/h2&gt;</description></item><item><title>Rich Content</title><link>https://42megaparsec.github.io/post_backup/rich-content/</link><pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/rich-content/</guid><description>&lt;p&gt;Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes" class="external-link" target="_blank" rel="noopener"&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/" class="external-link" target="_blank" rel="noopener"&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+&lt;h2 id=""&gt;
+ 
+&lt;/h2&gt;</description></item><item><title>Mais Conteúdo Rico</title><link>https://42megaparsec.github.io/post_backup/more-rich-content.pt-br/</link><pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/more-rich-content.pt-br/</guid><description>&lt;p&gt;O Hugo Coder proporciona alguns Shortcodes Customizados.&lt;/p&gt;
+&lt;h2 id=""&gt;
+ 
+&lt;/h2&gt;</description></item><item><title>More Rich Content</title><link>https://42megaparsec.github.io/post_backup/more-rich-content/</link><pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/more-rich-content/</guid><description>&lt;p&gt;Hugo Coder provides some Custom Shortcodes.&lt;/p&gt;
+&lt;h2 id=""&gt;
+ 
+&lt;/h2&gt;</description></item><item><title>Configuração de Equações Matemáticas</title><link>https://42megaparsec.github.io/post_backup/math-typesetting.pt-br/</link><pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/math-typesetting.pt-br/</guid><description>&lt;p&gt;Em um projeto Hugo as Notações Matemáticas podem ser usadas com a ajuda de bibliotecas JavaScript de terceiros.&lt;/p&gt;</description></item><item><title>Math Typesetting</title><link>https://42megaparsec.github.io/post_backup/math-typesetting/</link><pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/math-typesetting/</guid><description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description></item><item><title>HTML and CSS only tabs</title><link>https://42megaparsec.github.io/post_backup/html-and-css-only-tabs/</link><pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/html-and-css-only-tabs/</guid><description>&lt;h2 id="shortcodes"&gt;
+ Shortcodes
+&lt;/h2&gt;&lt;p&gt;The following content:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; tabgroup &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Hello World!
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; /tab &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Goodbye Everybody!
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; /tab &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; /tabgroup &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Will generate:&lt;/p&gt;
+
+
+
+
+
+&lt;div class="tabs tabs-left"&gt;
+ 
+
+
+
+
+&lt;style&gt;
+ .tabs input#tab-0-0:checked ~ .tab-content-0-0 {
+ display: block;
+ }
+&lt;/style&gt;
+
+&lt;input type="radio" class="tab-input" name="tab-select-0" id="tab-0-0" checked/&gt;
+&lt;label for="tab-0-0" class="tab-label"&gt;Hello&lt;/label&gt;
+&lt;div class="tab-content tab-content-0-0"&gt;
+ Hello World!
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+&lt;style&gt;
+ .tabs input#tab-0-1:checked ~ .tab-content-0-1 {
+ display: block;
+ }
+&lt;/style&gt;
+
+&lt;input type="radio" class="tab-input" name="tab-select-0" id="tab-0-1" /&gt;
+&lt;label for="tab-0-1" class="tab-label"&gt;Goodbye&lt;/label&gt;
+&lt;div class="tab-content tab-content-0-1"&gt;
+ Goodbye Everybody!
+&lt;/div&gt;
+
+
+
+
+&lt;/div&gt;
+
+
+
+&lt;h2 id="right-alignment"&gt;
+ Right alignment
+&lt;/h2&gt;&lt;p&gt;You can also align the tabs to the right:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; tabgroup align=&amp;#34;right&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Hello World!
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; /tab &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Goodbye Everybody!
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; /tab &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; /tabgroup &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Giving you this look:&lt;/p&gt;</description></item><item><title>HTML and CSS only tabs</title><link>https://42megaparsec.github.io/post_backup/html-and-css-only-tabs.pt-br/</link><pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/html-and-css-only-tabs.pt-br/</guid><description>&lt;h2 id="shortcodes"&gt;
+ Shortcodes
+&lt;/h2&gt;&lt;p&gt;O seguinte conteúdo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; tabgroup &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Hello World!
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; /tab &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Goodbye Everybody!
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; /tab &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; /tabgroup &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Irá gerar:&lt;/p&gt;
+
+
+
+
+
+&lt;div class="tabs tabs-left"&gt;
+ 
+
+
+
+
+&lt;style&gt;
+ .tabs input#tab-0-0:checked ~ .tab-content-0-0 {
+ display: block;
+ }
+&lt;/style&gt;
+
+&lt;input type="radio" class="tab-input" name="tab-select-0" id="tab-0-0" checked/&gt;
+&lt;label for="tab-0-0" class="tab-label"&gt;Hello&lt;/label&gt;
+&lt;div class="tab-content tab-content-0-0"&gt;
+ Hello World!
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+&lt;style&gt;
+ .tabs input#tab-0-1:checked ~ .tab-content-0-1 {
+ display: block;
+ }
+&lt;/style&gt;
+
+&lt;input type="radio" class="tab-input" name="tab-select-0" id="tab-0-1" /&gt;
+&lt;label for="tab-0-1" class="tab-label"&gt;Goodbye&lt;/label&gt;
+&lt;div class="tab-content tab-content-0-1"&gt;
+ Goodbye Everybody!
+&lt;/div&gt;
+
+
+
+
+&lt;/div&gt;
+
+
+
+&lt;h2 id="alinhamento-à-direita"&gt;
+ Alinhamento à direita
+&lt;/h2&gt;&lt;p&gt;Você também pode alinhas as tabs à direita:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; tabgroup align=&amp;#34;right&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Hello World!
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; /tab &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Goodbye Everybody!
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; /tab &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{&amp;lt; /tabgroup &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Obtendo o seguinte resultado:&lt;/p&gt;</description></item><item><title>Mermaid JS support</title><link>https://42megaparsec.github.io/post_backup/mermaid-support/</link><pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/mermaid-support/</guid><description>&lt;p&gt;If you want to use &lt;a href="https://mermaid-js.github.io/mermaid/#/" class="external-link" target="_blank" rel="noopener"&gt;Mermaid-JS&lt;/a&gt; on your website.
+Provide &lt;code&gt;mermaid&lt;/code&gt; as &lt;a href="https://gohugo.io/content-management/shortcodes/#readout" class="external-link" target="_blank" rel="noopener"&gt;Shortcode&lt;/a&gt; in your markdown file.&lt;/p&gt;
+&lt;div class="mermaid"&gt;
+flowchart LR
+
+ A --&gt; B
+
+ B --&gt; C
+
+ C --&gt; D
+
+ D --&gt; B
+
+
+&lt;/div&gt;
+
+&lt;div class="mermaid"&gt;
+sequenceDiagram
+participant Alice
+participant Bob
+Alice-&gt;&gt;Bob: Hi Bob
+Bob-&gt;&gt;Alice: Hi Alice
+
+&lt;/div&gt;
+
+&lt;p&gt;Find more example on &lt;a href="https://mermaid-js.github.io/mermaid/#/" class="external-link" target="_blank" rel="noopener"&gt;Mermaid-JS&lt;/a&gt; website.&lt;/p&gt;</description></item><item><title>Mermaid JS support</title><link>https://42megaparsec.github.io/post_backup/mermaid-support.pt-br/</link><pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/mermaid-support.pt-br/</guid><description>&lt;p&gt;Se quiser usar o &lt;a href="https://mermaid-js.github.io/mermaid/#/" class="external-link" target="_blank" rel="noopener"&gt;Mermaid-JS&lt;/a&gt; em sua página.
+Use o &lt;a href="https://gohugo.io/content-management/shortcodes/#readout" class="external-link" target="_blank" rel="noopener"&gt;shortcode&lt;/a&gt; &lt;code&gt;mermaid&lt;/code&gt; em seus conteúdos Markdown.&lt;/p&gt;
+&lt;div class="mermaid"&gt;
+flowchart LR
+
+ A --&gt; B
+
+ B --&gt; C
+
+ C --&gt; D
+
+ D --&gt; B
+
+
+&lt;/div&gt;
+
+&lt;div class="mermaid"&gt;
+sequenceDiagram
+participant Alice
+participant Bob
+Alice-&gt;&gt;Bob: Hi Bob
+Bob-&gt;&gt;Alice: Hi Alice
+
+&lt;/div&gt;
+
+&lt;p&gt;Entro mais exemplos na página do &lt;a href="https://mermaid-js.github.io/mermaid/#/" class="external-link" target="_blank" rel="noopener"&gt;Mermaid-JS&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Emoji Support</title><link>https://42megaparsec.github.io/post_backup/emoji-support/</link><pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/emoji-support/</guid><description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description></item><item><title>Suporte a Emojis</title><link>https://42megaparsec.github.io/post_backup/emoji-support.pt-br/</link><pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/emoji-support.pt-br/</guid><description>&lt;p&gt;Emojis podem ser ativados em um projeto Hugo de diversar formas.&lt;/p&gt;</description></item><item><title>External Page: Hugo Coder Wiki</title><link>https://42megaparsec.github.io/post_backup/hugo-coder-wiki/</link><pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/hugo-coder-wiki/</guid><description/></item><item><title>Página Externa: Wiki Hugo Coder</title><link>https://42megaparsec.github.io/post_backup/hugo-coder-wiki/</link><pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/hugo-coder-wiki/</guid><description/></item><item><title>Placeholder Text</title><link>https://42megaparsec.github.io/post_backup/placeholder-text/</link><pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/placeholder-text/</guid><description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description></item><item><title>Texto de Exemplo</title><link>https://42megaparsec.github.io/post_backup/placeholder-text.pt-br/</link><pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/post_backup/placeholder-text.pt-br/</guid><description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description></item><item><title>Autores de Hugo</title><link>https://42megaparsec.github.io/autores/autores-de-hugo/</link><pubDate>Thu, 05 Jan 2023 01:15:52 +0100</pubDate><guid>https://42megaparsec.github.io/autores/autores-de-hugo/</guid><description/></item><item><title>Códigos curtos</title><link>https://42megaparsec.github.io/tags/shortcodes/_index.pt-br/</link><pubDate>Wed, 04 Jan 2023 11:51:36 +0100</pubDate><guid>https://42megaparsec.github.io/tags/shortcodes/_index.pt-br/</guid><description/></item><item><title>About</title><link>https://42megaparsec.github.io/about/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/about/</guid><description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a href="https://github.com/gohugoio/hugo/blob/master/LICENSE" class="external-link" target="_blank" rel="noopener"&gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;
+&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/yuin/goldmark" class="external-link" target="_blank" rel="noopener"&gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alecthomas/chroma" class="external-link" target="_blank" rel="noopener"&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/muesli/smartcrop" class="external-link" target="_blank" rel="noopener"&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/spf13/cobra" class="external-link" target="_blank" rel="noopener"&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/spf13/viper" class="external-link" target="_blank" rel="noopener"&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;</description></item><item><title>Contact</title><link>https://42megaparsec.github.io/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/contact/</guid><description>&lt;p&gt;Follow me, @johndoe.&lt;/p&gt;</description></item><item><title>Projects</title><link>https://42megaparsec.github.io/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/projects/</guid><description>&lt;p&gt;Nothing to see here&amp;hellip; Move along!&lt;/p&gt;</description></item><item><title>Publications</title><link>https://42megaparsec.github.io/backup/publication_index_backup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://42megaparsec.github.io/backup/publication_index_backup/</guid><description>&lt;style&gt;
+
+/* ===== Section Titles ===== */
+.section-title {
+ font-size: 3rem !important;
+ font-weight: 700 !important;
+ color: #222 !important;
+ margin-top: 2.8rem !important;
+ margin-bottom: 1.4rem !important;
+ text-decoration: underline;
+ text-underline-offset: 6px;
+}
+
+/* ===== Toggle Buttons ===== */
+.toggle-btns {
+ display: flex;
+ gap: 12px;
+ margin: 20px 0;
+}
+
+.toggle-btns button {
+ padding: 8px 18px;
+ border-radius: 8px;
+ border: 1px solid #bbb;
+ background: #f3f3f3;
+ cursor: pointer;
+ font-size: 1.6rem;
+ font-weight: 500;
+ transition: background 0.25s ease, color 0.25s ease;
+}
+
+.toggle-btns button.active {
+ background: #333;
+ color: #fff;
+}
+
+/* ===== Wrapper for each section ===== */
+.pub-section { display: none; }
+.pub-section.active { display: block; }
+
+/* ===== Publication Item Card ===== */
+.pub-item {
+ padding: 1.2rem 1.4rem;
+ margin-bottom: 1.2rem;
+ background: #fafafa;
+ border-radius: 10px;
+ border: 1.5px solid #cccccc;
+ line-height: 1.65;
+}
+
+
+/* Header containing title + buttons */
+.pub-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ margin-bottom: 5px;
+}
+
+.pub-bottom {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 4px;
+ gap: 12px;
+}
+
+/* 버튼 */
+.pub-links {
+ display: inline-flex;
+ gap: 6px;
+ white-space: nowrap;
+}
+
+.pub-btn {
+ padding: 4px 6px;
+ border-radius: 12px;
+ border: 1px solid #777;
+ font-size: 1.2rem;
+ text-decoration: none;
+ background: #fff;
+ color: #333 !important;
+ transition: 0.2s ease;
+}
+
+.pub-btn:hover {
+ background: #333;
+ color: #fff !important;
+ border-color: #333;
+}
+
+.pub-btn.preprint { background: #eee; }
+
+/* Google Scholar link */
+.scholar-btn {
+ display: inline-block;
+ padding: 8px 15px;
+ background-color: #333;
+ color: #fff !important;
+ border-radius: 6px;
+ text-decoration: none;
+ font-size: 1.7rem;
+}
+
+.scholar-btn:hover { background-color: #555; }
+
+/* === Year / Category Headers (hierarchy fix) === */
+.pub-subtitle {
+ font-size: 2.3rem !important;
+ font-weight: 600 !important;
+ color: #222 !important;
+ margin-top: 2rem !important;
+ margin-bottom: 0.6rem !important;
+}
+
+&lt;/style&gt;
+&lt;script&gt;
+function showSection(section) {
+ document.getElementById("by-year").classList.remove("active");
+ document.getElementById("by-category").classList.remove("active");
+
+ document.getElementById(section).classList.add("active");
+
+ document.getElementById("btn-year").classList.remove("active");
+ document.getElementById("btn-category").classList.remove("active");
+
+ if (section === "by-year") {
+ document.getElementById("btn-year").classList.add("active");
+ } else {
+ document.getElementById("btn-category").classList.add("active");
+ }
+}
+&lt;/script&gt;
+&lt;h3 id="full-list-on-google-scholar"&gt;
+ Full list on Google Scholar
+&lt;/h3&gt;&lt;div style="margin: 20px 0;"&gt;
+ &lt;a href="https://scholar.google.com/citations?user=pC1TWpgAAAAJ"
+ target="_blank" class="scholar-btn"&gt;
+ View Google Scholar Profile
+ &lt;/a&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h1 id="view-mode"&gt;
+ &lt;span class="section-title"&gt;View Mode&lt;/span&gt;
+&lt;/h1&gt;&lt;div class="toggle-btns"&gt;
+ &lt;button id="btn-year" class="active" onclick="showSection('by-year')"&gt;By Year&lt;/button&gt;
+ &lt;button id="btn-category" onclick="showSection('by-category')"&gt;By Category&lt;/button&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h1 id="publications"&gt;
+ &lt;span class="section-title"&gt;Publications&lt;/span&gt;
+&lt;/h1&gt;&lt;div id="by-year" class="pub-section active"&gt;
+ &lt;h2 class="pub-subtitle"&gt;2025&lt;/h2&gt;&lt;div id="pub-1" 
+ class="pub-item targetable" 
+ data-pub="pub-1"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Network analysis with quantum dynamics clarifies why photosystem II exploits both chlorophyll a and b&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ E Kim, D Lee, S Sakamoto, JY Jo, M Vargas, A Ishizaki, J Minagawa, H Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Science Advances 11(19), eads0327&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/photosystem_230421.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2101.04848" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1126/sciadv.ads0327" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;div id="pub-2" 
+ class="pub-item targetable" 
+ data-pub="pub-2"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Kaleidoscopic reorganization of network communities across different scales&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ W Jeong, D Lee, H Kim, SH Lee
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Physical Review E 111(1), 014312&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2409.18665" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1103/PhysRevE.111.014312" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;div id="pub-3" 
+ class="pub-item targetable" 
+ data-pub="pub-3"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Self-consistent gravity model for inferring node mass in flow networks&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, W Cho, H Kim, G Kim, HC Jeong, BJ Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Scientific Reports 15(1), 18839&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/gravity_poster_netsci.pdf" download&gt;Poster&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/gravity_250204_CSH.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2106.10025" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1038/s41598-025-03664-7" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;h2 class="pub-subtitle"&gt;2024&lt;/h2&gt;&lt;div id="pub-4" 
+ class="pub-item targetable" 
+ data-pub="pub-4"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Pseudo-phase difference guides additional connection between oscillators for synchrony&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, JM Park, H Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Chaos, Solitons &amp;amp; Fractals 189, 115617&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/addlk_230823_statwork.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1016/j.chaos.2024.115617" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;div id="pub-5" 
+ class="pub-item targetable" 
+ data-pub="pub-5"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Network science approaches for analyzing regional interactions of sea surface temperature&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, JM Park, H Kim, HE Kim, E Lee
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;JGS Korea 60(4), 433–447&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/climate_240424_KPS.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.14770/jgsk.2024.044" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;h2 class="pub-subtitle"&gt;2023&lt;/h2&gt;&lt;div id="pub-6" 
+ class="pub-item targetable" 
+ data-pub="pub-6"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;A multiresolution framework for the analysis of community structure in international Trade networks&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ W Cho, D Lee, BJ Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Scientific Reports 13(1), 5721&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2204.12687" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1038/s41598-023-32686-2" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;div id="pub-7" 
+ class="pub-item targetable" 
+ data-pub="pub-7"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;How to grow an oscillators’ network with enhanced synchronization&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ JM Park, D Lee, H Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Chaos 33(3), 033137&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/addnd_220416_SKKU.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2212.00982" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1063/5.0134325" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;h2 class="pub-subtitle"&gt;2022&lt;/h2&gt;&lt;div id="pub-8" 
+ class="pub-item targetable" 
+ data-pub="pub-8"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Different environmental conditions in genetic algorithm&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, BJ Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Physica A 602, 127604&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/GA_190426_KPS.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2103.12313" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1016/j.physa.2022.127604" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;h2 class="pub-subtitle"&gt;2021&lt;/h2&gt;&lt;div id="pub-9" 
+ class="pub-item targetable" 
+ data-pub="pub-9"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Consistency landscape of network communities&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, SH Lee, BJ Kim, H Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Physical Review E 103(5), 052306&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/CI_200825_MEE.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2103.12626" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1103/PhysRevE.103.052306" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;h2 class="pub-subtitle"&gt;2018&lt;/h2&gt;&lt;div id="pub-10" 
+ class="pub-item targetable" 
+ data-pub="pub-10"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Deviation-based spam-filtering method via stochastic approach&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, MJ Lee, BJ Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;EPL 121(6), 68004&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/DR_poster.pdf" download&gt;Poster&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/DR_170410_junbuk.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1209/0295-5075/121/68004" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;div id="pub-11" 
+ class="pub-item targetable" 
+ data-pub="pub-11"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Product flow and price change in an agricultural distribution network&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, SG Yang, K Kim, BJ Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Physica A 490, 70–76&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/baechu_poster_statphys.pdf" download&gt;Poster&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/baechu_171125_KPS.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1016/j.physa.2017.08.006" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div id="by-category" class="pub-section"&gt;
+ &lt;h2 class="pub-subtitle"&gt;Trade network&lt;/h2&gt;&lt;div class="pub-item targetable" 
+ data-pub="pub-3"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Self-consistent gravity model for inferring node mass in flow networks&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, W Cho, H Kim, G Kim, HC Jeong, BJ Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Scientific Reports 15(1), 18839&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/gravity_poster_netsci.pdf" download&gt;Poster&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/gravity_250204_CSH.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2106.10025" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1038/s41598-025-03664-7" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;div class="pub-item targetable" 
+ data-pub="pub-6"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;A multiresolution framework for the analysis of community structure in international Trade networks&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ W Cho, D Lee, BJ Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Scientific Reports 13(1), 5721&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2204.12687" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1038/s41598-023-32686-2" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;div class="pub-item targetable" 
+ data-pub="pub-11"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Product flow and price change in an agricultural distribution network&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, SG Yang, K Kim, BJ Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Physica A 490, 70–76&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/baechu_poster_statphys.pdf" download&gt;Poster&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/baechu_171125_KPS.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1016/j.physa.2017.08.006" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;h2 class="pub-subtitle"&gt;Community structure&lt;/h2&gt;&lt;div class="pub-item targetable" 
+ data-pub="pub-2"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Kaleidoscopic reorganization of network communities across different scales&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ W Jeong, D Lee, H Kim, SH Lee
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Physical Review E 111(1), 014312&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2409.18665" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1103/PhysRevE.111.014312" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;div class="pub-item targetable" 
+ data-pub="pub-9"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Consistency landscape of network communities&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, SH Lee, BJ Kim, H Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Physical Review E 103(5), 052306&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/CI_200825_MEE.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2103.12626" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1103/PhysRevE.103.052306" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;h2 class="pub-subtitle"&gt;Synchronization&lt;/h2&gt;&lt;div class="pub-item targetable" 
+ data-pub="pub-4"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Pseudo-phase difference guides additional connection between oscillators for synchrony&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, JM Park, H Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Chaos, Solitons &amp;amp; Fractals 189, 115617&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/addlk_230823_statwork.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1016/j.chaos.2024.115617" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;div class="pub-item targetable" 
+ data-pub="pub-7"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;How to grow an oscillators’ network with enhanced synchronization&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ JM Park, D Lee, H Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Chaos 33(3), 033137&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/addnd_220416_SKKU.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2212.00982" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1063/5.0134325" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;h2 class="pub-subtitle"&gt;Biological network&lt;/h2&gt;&lt;div class="pub-item targetable" 
+ data-pub="pub-1"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Network analysis with quantum dynamics clarifies why photosystem II exploits both chlorophyll a and b&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ E Kim, D Lee, S Sakamoto, JY Jo, M Vargas, A Ishizaki, J Minagawa, H Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Science Advances 11(19), eads0327&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/photosystem_230421.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2101.04848" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1126/sciadv.ads0327" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;h2 class="pub-subtitle"&gt;Climate dynamics&lt;/h2&gt;&lt;div class="pub-item targetable" 
+ data-pub="pub-5"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Network science approaches for analyzing regional interactions of sea surface temperature&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, JM Park, H Kim, HE Kim, E Lee
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;JGS Korea 60(4), 433–447&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/climate_240424_KPS.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.14770/jgsk.2024.044" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;h2 class="pub-subtitle"&gt;Optimization algorithm&lt;/h2&gt;&lt;div class="pub-item targetable" 
+ data-pub="pub-8"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Different environmental conditions in genetic algorithm&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, BJ Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;Physica A 602, 127604&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/GA_190426_KPS.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://arxiv.org/abs/2103.12313" target="_blank"&gt;Preprint&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1016/j.physa.2022.127604" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;h2 class="pub-subtitle"&gt;Filtering algorithm&lt;/h2&gt;&lt;div class="pub-item targetable" 
+ data-pub="pub-10"
+ style="scroll-margin-top: 120px;"&gt;
+ 
+ &lt;div class="pub-title"&gt;
+ &lt;b&gt;Deviation-based spam-filtering method via stochastic approach&lt;/b&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-authors"&gt;
+ D Lee, MJ Lee, BJ Kim
+ &lt;/div&gt;
+ 
+ &lt;div class="pub-bottom"&gt;
+ &lt;i&gt;EPL 121(6), 68004&lt;/i&gt;
+ 
+ &lt;span class="pub-links"&gt;
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/DR_poster.pdf" download&gt;Poster&lt;/a&gt;
+ 
+ 
+ 
+ &lt;a class="pub-btn preprint" href="https://42megaparsec.github.io/files/ppt/DR_170410_junbuk.pdf" download&gt;Slides&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;a class="pub-btn" href="https://doi.org/10.1209/0295-5075/121/68004" target="_blank"&gt;Journal&lt;/a&gt;
+ 
+ &lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+
+&lt;/div&gt;</description></item></channel></rss>
