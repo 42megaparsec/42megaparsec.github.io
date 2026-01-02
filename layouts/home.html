@@ -36,26 +36,145 @@
   font-size: 1.55rem;
 }
 
-/* Contact Buttons */
-.contact-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-bottom: 2.5rem;
+/* =============================
+   PAGE WRAPPER
+   ============================= */
+.home-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
 }
 
-/* === 공통 버튼 스타일 === */
+/* =============================
+   HERO (photo bottom == buttons bottom)
+   ============================= */
+.hero {
+  display: flex;
+  align-items: flex-end; /* 핵심: 사진 하단과 오른쪽 버튼 하단 맞춤 */
+  gap: 2.4rem;
+  margin-bottom: 2.2rem;
+}
+
+.hero-photo img {
+  width: 290px;
+  height: 290px;
+  border-radius: 0px;
+  object-fit: cover;
+  display: block;
+  margin-left: 5rem;
+}
+
+/* 오른쪽 블록: 사진과 동일 높이로 맞춰서 baseline 안정화 */
+.hero-right {
+  flex: 1;
+  min-height: 290px; /* 사진 높이와 동일 */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* Name: sharper serif */
+.hero-name {
+  font-family: "Libre Baskerville", "Times New Roman", serif;
+  font-size: 3.7rem;
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0;
+  color: #222;
+}
+
+/* Ph.D. — academic identity, quiet but clear */
+.hero-degree {
+  font-size: 1.55rem;
+  font-weight: 400;
+  color: #555;
+  margin-top: 0.35rem;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.8rem;
+}
+
+/* Role — primary current position */
+.hero-role {
+  font-size: 2.05rem;
+  font-weight: 500;
+  color: #333;
+  margin-top: 0.25rem;
+  line-height: 1.2;
+}
+
+/* Institution — contextual, clearly lower */
+.hero-inst {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #777;
+  margin-top: 0.35rem;
+  line-height: 1.25;
+}
+.hero-loc {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #888;
+  margin-top: 0.35rem;
+  line-height: 1.2;
+}
+
+/* 가운데 정보 블록: 빈 공간 채우되 과하지 않게 */
+.hero-mid {
+  margin-top: 1.05rem;
+  max-width: 56ch;
+  color: #555;
+  font-size: 1.55rem;
+  line-height: 1.45;
+}
+
+.hero-mid .kws {
+  margin-top: 0.35rem;
+  color: #6a6a6a;
+  font-size: 1.48rem;
+}
+
+/* 버튼 영역을 오른쪽 블록 맨 아래로 고정 */
+.hero-bottom {
+  margin-top: auto; /* 핵심: 버튼 묶음을 아래로 내림 */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* =============================
+   BUTTONS (keep old size, new hierarchy)
+   ============================= */
 .btn-base {
   display: inline-block;
-  padding: 4px 8px;
-  font-size: 1.6rem;
+  padding: 6px 13.4px;       /* 기존 크기 유지 */
+  font-size: 1.7rem;      /* 기존 크기 유지 */
   border-radius: 10px;
   text-decoration: none;
-  transition: background 0.25s ease;
+  transition: background 0.25s ease, border-color 0.25s ease;
+  line-height: 1.2;
 }
 
-/* === contact 전용 === */
+/* Primary row */
+.contact-primary {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.65rem;
+}
+
+/* Secondary row */
+.contact-secondary {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0;
+}
+
+/* Secondary (default dark) */
 .contact-btn {
   background: #333;
   color: #fff !important;
@@ -64,7 +183,7 @@
   background: #555;
 }
 
-/* === CV 전용 === */
+/* CV secondary style if used there (not used now, but kept) */
 .cv-btn {
   background: #ddd;
   color: #222 !important;
@@ -73,68 +192,148 @@
 .cv-btn:hover {
   background: #ccc;
 }
+
+/* Primary emphasis for Email and CV */
+.primary-btn {
+  padding: 7px 10px;
+  background: #2d61bc;
+  color: #fff !important;
+  border: 1px solid #2d61bc;
+}
+.primary-btn:hover {
+  background: #2b5fbf;
+  border-color: #2b5fbf;
+}
+
+/* A slightly different tone for CV (still primary) */
+.primary-btn {
+  background: #2d61bc;
+  color: #fff !important;
+  border: 1px solid #2d61bc;
+}
+.primary-btn:hover {
+  background: #2b5fbf;
+  border-color: #2b5fbf;
+}
+
+/* =============================
+   INTRO PARAGRAPHS
+   ============================= */
+.intro p {
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+}
+
+/* HR */
+hr.sep {
+  margin: 3rem 0;
+}
+
+/* Lists */
+.skill-list, .lang-list, .award-list {
+  line-height: 1.7;
+  margin-top: 0.5rem;
+}
+
+/* =============================
+   RESPONSIVE
+   ============================= */
+@media (max-width: 820px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .hero-photo img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-right {
+    min-height: unset;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-bottom {
+    align-items: center;
+    margin-top: 1.2rem;
+  }
+
+  .contact-primary,
+  .contact-secondary {
+    justify-content: center;
+  }
+}
 </style>
 
+<section class="home-section home-wrap">
 
+  <!-- HERO -->
+  <div class="hero">
 
+    <!-- Left: Photo -->
+    <div class="hero-photo">
+      <img src="/images/avatar.jpg" alt="Profile picture">
+    </div>
 
-<section class="home-section" style="max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem;">
+    <!-- Right: Name / Role / Institution / Mid info / Buttons -->
+    <div class="hero-right">
+      <h1 class="hero-name">Daekyung Lee</h1>
+      <div class="hero-degree">Ph.D. in Physics</div>
+      <div class="hero-role">Postdoctoral Researcher</div>
+      <div class="hero-inst">Supply Chain Intelligence Institute Austria (ASCII)</div>
+      <div class="hero-loc">Vienna, Austria</div>
+      
 
+      <!-- Bottom: buttons fixed to the baseline -->
+      <div class="hero-bottom">
+        <!-- Primary: Email + CV -->
+        <div class="contact-primary">
+          <a class="btn-base primary-btn" href="mailto:daekyung.lee@ascii.ac.at">Email</a>
+          <a class="btn-base primary-btn" href="/files/CV_DaekyungLee.pdf" target="_blank" rel="noopener">CV</a>
+          <a class="btn-base primary-btn" href="https://scholar.google.com/citations?user=pC1TWpgAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
 
-  <!-- Avatar -->
-  <div style="text-align: center; margin-bottom: 1rem;">
-    <img src="/images/avatar.jpg"
-         alt="Profile picture"
-         style="width: 250px; height: 250px; border-radius: 0px; object-fit: cover;">
+        </div>
+
+        <!-- Secondary: the rest -->
+        <div class="contact-secondary">
+          <a class="btn-base contact-btn" href="https://github.com/42megaparsec" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn-base contact-btn" href="https://www.linkedin.com/in/42megaparsec" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn-base contact-btn" href="https://orcid.org/0000-0003-2640-5658" target="_blank" rel="noopener">ORCID</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  <!-- Name -->
-  <h1 style="font-size: 3.5rem; font-weight: 700; margin-bottom: 0.4rem; text-align:center;">
-    Daekyung Lee
-  </h1>
-
-  <h2 style="font-size: 2.3rem; font-weight: 400; color: #666; margin-bottom: 2rem; text-align:center;">
-    Postdoctoral Researcher in Complex Networks & Supply Chain Analysis
-  </h2>
-
-  <!-- Contact Buttons -->
-<div class="contact-buttons">
-  <a class="btn-base contact-btn" href="mailto:daekyung.lee@ascii.ac.at">Email</a>
-  <a class="btn-base contact-btn" href="https://github.com/42megaparsec" target="_blank">GitHub</a>
-  <a class="btn-base contact-btn" href="https://www.linkedin.com/in/42megaparsec" target="_blank">LinkedIn</a>
-  <a class="btn-base contact-btn" href="https://scholar.google.com/citations?user=pC1TWpgAAAAJ" target="_blank">Google Scholar</a>
-  <a class="btn-base contact-btn" href="https://orcid.org/0000-0003-2640-5658" target="_blank">ORCID</a>
-
-  <a class="btn-base cv-btn" href="/files/CV_DaekyungLee.pdf" target="_blank">Download CV</a>
-</div>
-
-
-
   <!-- Intro Paragraphs (unchanged) -->
-  <p style="line-height: 1.6; margin-bottom: 1.4rem;">
-    I am a postdoctoral researcher at the Supply Chain Intelligence Institute Austria (ASCII),
-    where I study the stability and dynamics of international supply networks. Trained in
-    statistical physics, I use network science and data-driven modeling to uncover structure
-    in complex data and translate it into practical insight.
-  </p>
-  <p style="line-height: 1.6; margin-bottom: 1.4rem;">
-    I see science as the pursuit of simplicity that makes the world more comprehensible.
-    Newton’s law of gravitation showed that the fall of an apple and the motion of the Moon
-    follow the same principle. Likewise, understanding a complex system means uncovering a
-    simple structure that captures its essential behavior and draws the complexity of the
-    world within the reach of human comprehension.
-  </p>
-  <p style="line-height: 1.6; margin-bottom: 2.2rem;">
-    I have applied this perspective to diverse problems, including stability and shock
-    propagation in supply chains, synchronization in power grids, correlation patterns in
-    climate systems, and energy transport in photosynthetic networks. My current work focuses
-    on the economic and systemic behavior of global supply chains, and I am always open to
-    new ideas and collaborations across disciplines.
-  </p>
+  <div class="intro">
+    <p>
+      I am a postdoctoral researcher at the Supply Chain Intelligence Institute Austria (ASCII),
+      where I study the stability and dynamics of international supply networks. Trained in
+      statistical physics, I use network science and data-driven modeling to uncover structure
+      in complex data and translate it into practical insight.
+    </p>
+    <p>
+      I see science as the pursuit of simplicity that makes the world more comprehensible.
+      Newton’s law of gravitation showed that the fall of an apple and the motion of the Moon
+      follow the same principle. Likewise, understanding a complex system means uncovering a
+      simple structure that captures its essential behavior and draws the complexity of the
+      world within the reach of human comprehension.
+    </p>
+    <p style="margin-bottom: 2.2rem;">
+      I have applied this perspective to diverse problems, including stability and shock
+      propagation in supply chains, synchronization in power grids, correlation patterns in
+      climate systems, and energy transport in photosynthetic networks. My current work focuses
+      on the economic and systemic behavior of global supply chains, and I am always open to
+      new ideas and collaborations across disciplines.
+    </p>
+  </div>
 
-  <hr style="margin: 3rem 0;">
-
-
+  <hr class="sep">
 
   <!-- Career -->
   <h2 class="section-title">Career</h2>
@@ -157,8 +356,6 @@
     Power grid stability, synchronization dynamics, and complexity science.
   </p>
 
-
-
   <!-- Experience -->
   <h2 class="section-title">Experience</h2>
 
@@ -176,10 +373,7 @@
     Research Topic: Power grid stability, Community detection
   </p>
 
-
-  <hr style="margin: 3rem 0;">
-
-
+  <hr class="sep">
 
   <!-- Education -->
   <h2 class="section-title">Education</h2>
@@ -198,40 +392,31 @@
     B.S., Department of Physics
   </p>
 
-
-  <hr style="margin: 3rem 0;">
-
-
+  <hr class="sep">
 
   <!-- Skills -->
   <h2 class="section-title">Skills</h2>
-  <ul style="line-height: 1.7; margin-top: 0.5rem;">
+  <ul class="skill-list">
     <li>Complex Network Theory</li>
-    <li>Data Science & Modeling</li>
+    <li>Data Science &amp; Modeling</li>
     <li>Scientific Programming (Python)</li>
     <li>Statistical mechanics</li>
   </ul>
 
-
-  <hr style="margin: 3rem 0;">
-
-
+  <hr class="sep">
 
   <!-- Languages -->
   <h2 class="section-title">Languages</h2>
-  <ul style="line-height: 1.6; margin-top: 0.5rem;">
+  <ul class="lang-list">
     <li><strong>Korean:</strong> Native</li>
     <li><strong>English:</strong> Fluent</li>
   </ul>
 
-
-  <hr style="margin: 3rem 0;">
-
-
+  <hr class="sep">
 
   <!-- Awards -->
   <h2 class="section-title">Awards</h2>
-  <ul style="line-height: 1.6; margin-top: 0.5rem;">
+  <ul class="award-list">
     <li><strong>Best Oral Presentation</strong> — Korean Physical Society Fall Meeting (2017)</li>
     <li><strong>Grand Prize</strong> — Experience Learning Project, University of Seoul (2013)</li>
   </ul>
